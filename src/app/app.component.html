@@ -1,0 +1,4 @@
+<!-- <button class="subscribe" (click)="subscribe()" [disabled]="isSubscribed">{{btnText}}</button> -->
+<button class="subscribe" *ngIf="!isSubscribed" (click)="subscribe()">Subscribe</button>
+<button class="subscribe" *ngIf="isSubscribed" disabled>Subscribed</button>
+<router-outlet></router-outlet>
